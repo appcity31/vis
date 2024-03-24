@@ -1,0 +1,234 @@
+/*----------------------------------------*/
+/*  14. footer
+/*----------------------------------------*/
+
+.footer {
+    &__widget {
+        p {
+            color: #eeedef;
+            font-size: 16px;
+            line-height: 27px;
+            opacity: .83;
+        }
+        .thm-btn {
+            padding: 10px 33px;
+            overflow: hidden;
+        }
+        .widget-title {
+            font-size: 24px;
+            color: var(--color-white);
+            position: relative;
+            margin-bottom: 25px;
+            letter-spacing: -.2px;
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: -8px;
+                left: 0;
+                width: 28px;
+                height: 2px;
+            }
+        }
+    }
+    &__logo {
+        margin-bottom: 20px;
+    }
+    &__newslater {
+        position: relative;
+        margin-top: 30px;
+        input {
+            padding: 0 30px;
+            background-color: #361f61;
+            border: none;
+            color: var(--color-white);
+            @include placeholder(var(--color-white));
+            font-size: 14px;
+            height: 44px;
+            margin: 0;
+        }
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 62px;
+            font-size: 14px;
+            height: 100%;
+            color: var(--color-white);
+        }
+    }
+    &__info {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+            a {
+                display: inline-flex;
+                i {
+                    min-width: 18px;
+                    margin-right: 8px;
+                    display: inline-flex;
+                    margin-top: 4px;
+                    font-size: 15px;
+                }
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    &__open-hour {
+        h5 {
+            font-size: 14px;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            color: var(--color-white);
+        }
+        p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    &__copyright-text {
+        color: var(--color-white);
+        font-size: 14px;
+        padding: 20px 0;
+        position: relative;
+        &::before {
+            top: 0;
+            left: 0;
+            position: absolute;
+            content: "";
+            background: linear-gradient(90deg, #372b4b66 4.78%, #ffffff2a 49.21%, #372b4b66 93.92%);
+            width: 100%;
+            height: 1px;
+            z-index: 2;
+            right: 0;
+            width: 85%;
+            margin: auto;
+        }
+        a {
+            color: currentColor;
+        }
+    }
+}
+.widget-gallery {
+    margin: -6px;
+    margin-top: 10px;
+    overflow: hidden;
+    li {
+        float: left;
+        text-align: center;
+        max-width: 33.33%;
+        padding: 6px;
+        a {
+            position: relative;
+            display: block;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(19, 4, 46, 0.67);
+                -webkit-transition: all 250ms linear 0ms;
+                -khtml-transition: all 250ms linear 0ms;
+                -moz-transition: all 250ms linear 0ms;
+                -ms-transition: all 250ms linear 0ms;
+                -o-transition: all 250ms linear 0ms;
+                transition: all 250ms linear 0ms;
+                opacity: 0;
+                z-index: 1;
+            }
+            &::after {
+                content: "\f002";
+                font-size: 14px;
+                font-family: "Font Awesome 5 Pro";
+                font-weight: 700;
+                color: #fff;
+                z-index: 2;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translate(-50%,-50%);
+                -khtml-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                -webkit-transition: all 250ms linear 0ms;
+                -khtml-transition: all 250ms linear 0ms;
+                -moz-transition: all 250ms linear 0ms;
+                -ms-transition: all 250ms linear 0ms;
+                -o-transition: all 250ms linear 0ms;
+                transition: all 250ms linear 0ms;
+                opacity: 0;
+            }
+            &:hover {
+                &::before,
+                &::after {
+                    opacity: 1;
+                }
+                
+            }
+        }
+    }
+    
+}
+.site-footer {
+    overflow: hidden;
+    [class^="col-"]:nth-child(2) .footer__widget {
+        padding-left: 15px;
+        margin-right: -20px;
+        @include respond(md) {
+            padding-left: 0;
+            margin-right: 0;
+        }
+    }
+    [class^="col-"]:nth-child(3) .footer__widget {
+        padding-left: 32px;
+        margin-right: -20px;
+        @include respond(md) {
+            padding-left: 0;
+            margin-right: 0;
+        }
+    }
+    [class^="col-"]:nth-child(4) .footer__widget {
+        padding-left: 20px;
+        @include respond(md) {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .site-footer {
+        position: sticky;
+        bottom: 0;
+    }
+}
+
+.footer-style-two {
+    .social-links a i:nth-child(2) {
+        color: var(--thm-color-2);
+        background-clip: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        background: transparent;
+    }
+    .widget-gallery li a::before {
+        background-color: rgba(10, 24, 63, 0.67);
+    }
+}
+.footer-style-three {
+    .footer__widget .thm-btn {
+        padding: 12px 29px;
+    }
+    .footer__newslater input {
+        background-color: var(--color-black);
+    }
+    .widget-gallery li a::before {
+        background-color: rgba(0, 0, 0, 0.67);
+    }
+}

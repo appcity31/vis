@@ -1,0 +1,54 @@
+.brand {
+    &__wrap {
+        padding: 50px 0;
+        z-index: 3;
+        position: relative;
+        @include respond(xs) {
+            padding: 20px 0;
+        }
+    }
+    &__slide {
+        padding: 0 20px;
+        z-index: 3;
+        position: relative;
+        @include respond(md) {
+            padding: 0 20px;
+        }
+        .swiper-wrapper {
+            margin: 20px 0;
+        }
+    }
+    &__item {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        a {
+            @include transition(all 0.3s cubic-bezier(0, 0, 0.2, 1) 0s);
+            &:hover {
+                @include transform(translateY(-5px));
+            }
+            
+        }
+    }
+    &__single {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        a {
+            display: inline-block;
+            -webkit-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+            -khtml-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+            -moz-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+            -ms-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+            -o-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+            transition: all .3s cubic-bezier(0,0,.2,1)0s;
+            position: relative;
+            padding: 5px 0;
+            &:hover {
+               @include transform(translateY(-5px));
+            }
+        }
+    }
+}

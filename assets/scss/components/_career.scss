@@ -1,0 +1,210 @@
+.career-item-inner {
+    padding: 30px;
+    background-color: #F4F3F6;
+    position: relative;
+    @include respond(xs) {
+        padding: 30px 20px;
+    }
+    .item {
+        &--icon {
+            font-size: 52px;
+            margin-bottom: 25px;
+        }
+        &--title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            @include respond(xs) {
+                font-size: 22px;
+            }
+            a {
+                color: inherit;
+            }
+        }
+        &--meta {
+            li {
+                font-size: 16px;
+                color: var(--color-black);
+                margin-bottom: 10px;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+        &--content {
+            font-size: 16px;
+            line-height: 26px;
+            color: #4A4C51;
+        }
+        &--time {
+            position: absolute;
+            top: 40px;
+            right: 30px;
+            background-color: #E3E3E6;
+            @include border-radius(30px);
+            padding: 2px 25px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #4A4C51;
+
+        }   
+    }
+}
+.career-single {
+    &__content {
+        margin-right: -25px;
+        padding: 30px;
+        border: 1px solid rgba(44, 26, 78, 0.15);
+        @include respond(md) {
+            margin-right: 0;
+        }
+        @include respond(xs) {
+            padding: 30px 15px;
+        }
+        h3 {
+            margin-bottom: 23px;
+            font-size: 34px;
+            @include respond(xs) {
+                font-size: 24px;
+            }
+        }
+        h4 {
+            margin-bottom: 23px;
+            font-size: 24px;
+            @include respond(xs) {
+                font-size: 22px;
+            }
+        }
+        p {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        ul {
+            list-style: none;
+            margin-bottom: 30px;
+            li {
+                padding-left: 28px;
+                position: relative;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                }
+            }
+        }
+    }
+    &__img {
+        margin-bottom: 40px;
+    }
+    &__widget {
+        padding: 30px;
+        border: 1px solid rgba(44, 26, 78, 0.15);
+        margin-left: 30px;
+        @include respond(md) {
+            margin-left: 0;
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 27px;
+        }
+    }
+    &__details {
+        list-style: none;
+        li {
+            font-size: 16px;
+            line-height: 30px;
+            padding-left: 33px;
+            position: relative;
+            color: #4A4C51;
+            &:not(:last-child) {
+                margin-bottom: 17px;
+            }
+            strong {
+                color: var(--color-black);
+            }
+            i {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                font-size: 20px;
+            }
+        }
+    }
+}
+// job apply
+.job-apply {
+    &__img {
+        max-width: 816px;
+        padding-right: 80px;
+        margin-right: 40px;
+        @include respond(md) {
+            margin-right: 0;
+        }
+    }
+    &__img-bottom {
+        position: absolute;
+        bottom: -65px;
+        right: 0;
+        max-width: 492px;
+        border: 20px solid var(--color-white);
+        @include respond(laptop) {
+            max-width: 300px;
+            border-width: 10px;
+        }
+        @include respond(lg) {
+            max-width: 300px;
+            border-width: 10px;
+        }
+        @include respond(xs) {
+            max-width: 200px;
+            border-width: 5px;
+            bottom: -20px;
+        }
+    }
+    &__inner {
+        margin-left: -40px;
+        @include respond(md) {
+            margin-left: 0;
+        }
+    }
+    &__form {
+       input, select, textarea {
+            height: 62px;
+            border: 1px solid #E0DDE5;
+            padding: 20px;
+            line-height: 1;
+            font-size: 16px;
+            @include placeholder(#4A4C51);
+            color: var(--color-black);
+            font-weight: 400;
+            margin-bottom: 30px;
+            background-color: transparent;
+            &:focus {
+                border-color: var(--color-primary);
+            }
+       }
+       label {
+            color: var(--color-black);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        input[type='file'] {
+            border: 0;
+            padding: 0;
+            height: auto;
+            cursor: pointer;
+        }
+        textarea {
+            min-height: 174px;
+        }
+    }
+}

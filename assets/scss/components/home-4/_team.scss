@@ -1,0 +1,135 @@
+.inv-team-section {
+	padding: 120px 0px;
+	.inv-section-title {
+		margin: 0 auto;
+		max-width: 610px;
+	}
+	.inv-team-shape {
+		&.shape_1 {
+			top: 0;
+			left: 0;
+		}
+		&.shape_2 {
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
+.inv-team-content {
+	margin-top: 25px;
+}
+.inv-team-member-item {
+	z-index: 1;
+	max-width: 585px;
+	padding: 0px 50px 40px 70px;
+	&:before {
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 85%;
+		z-index: -1;
+		content: '';
+		position: absolute;
+		border-radius: 5px;
+		background-color: #f0f4fd;
+	}
+	.inv-team-img {
+		z-index: 1;
+		margin-bottom: 28px;
+		display: inline-block;
+		&:before {
+			width: 70%;
+			height: 10px;
+			content: '';
+			z-index: -1;
+			bottom: -8px;
+			border-radius: 3px;
+			position: absolute;
+			border-top-right-radius: 0;
+			border-top-left-radius: 0;
+			background: var(--grad-color);
+		}
+		img {
+			border-radius: 5px;
+		}
+	}
+	.inv-team-social {
+		.social-list {
+			margin-bottom: 20px;
+			a {
+				color: #fff;
+				width: 45px;
+				height: 45px;
+				display: flex;
+				margin-right: 5px;
+				align-items: center;
+				border-radius: 100%;
+				justify-content: center;
+				&.s-fb {
+					background-color: #186cb0;
+				}
+				&.s-tw {
+					background-color: #00b3d3;
+				}
+				&.s-bh {
+					background-color: #074682;
+				}
+			}
+		}
+	}
+	.team-contact-info {
+		margin-bottom: 30px;
+		h3 {
+			a {
+				color: #183153;
+				font-size: 30px;
+				font-weight: 800;
+			}
+		}
+		span {
+			a {
+				color: #183153;
+				font-size: 17px;
+				font-weight: 800;
+				position: relative;
+				display: inline-block;
+				&:before {
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					height: 2px;
+					content: '';
+					position: absolute;
+					background-color: #9da5b5;
+				}
+			}
+		}
+	}
+	.inv-team-name-text {
+		span {
+			padding-bottom: 3px;
+			display: inline-block;
+			color: var(--thm-color-4);
+		}
+		h3 {
+			padding-bottom: 10px;
+			a {
+				color: #000000;
+				font-size: 31px;
+				font-weight: 800;
+			}
+		}
+	}
+}
+.inv-team-content {
+	.inv-carousel-arrow {
+		top: 58%;
+		background-color: #f0f4fd;
+	}
+	.inv-team-arrow-prev {
+		left: -100px;
+	}
+	.inv-team-arrow-next {
+		right: -100px;
+	}
+}

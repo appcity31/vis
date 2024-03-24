@@ -1,0 +1,151 @@
+.inv-testimonial {
+	width: 45%;
+	padding: 75px 100px 0px 75px;
+}
+.inv-testimonial-item {
+	.quote-icon {
+		margin-bottom: 18px;
+	}
+	.inv-testimonial-text {
+		color: #c7c5db;
+		font-size: 20px;
+		line-height: 1.6;
+		margin-bottom: 15px;
+	}
+	.inv-testimonial-author {
+		.author-rate {
+			margin-bottom: 5px;
+			li {
+				color: #c3b802;
+				font-size: 15px;
+			}
+		}
+		.author-name {
+			.name {
+				color: #fff;
+				font-size: 26px;
+				font-weight: 800;
+			}
+			.designation {
+				color: #535ee0;
+				margin-left: 15px;
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.inv-testimonial-thumb-area {
+	width: 160px;
+	bottom: -70px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+	margin-right: 55px;
+}
+.inv-testimonial-slide-for-area {
+	max-width: 465px;
+	margin-top: 90px;
+}
+.inv-faq-content {
+	width: 55%;
+	padding: 120px 0px 120px 120px;
+}
+.inv-faq-accordion {
+	max-width: 570px;
+
+	.accordion-header {
+		button {
+			border: none;
+			color: #061D25;
+			font-size: 20px;
+			font-weight: 800;
+			position: relative;
+			border-radius: 3px;
+			background: transparent;
+			padding: 25px 30px 25px 85px;
+			b {
+				
+			}
+		}
+	}
+	.accordion-button:focus {
+		border: none;
+		outline: none;
+		box-shadow: none;
+	}
+	.accordion-item {
+		border: none;
+		border-radius: 0;
+		position: relative;
+		margin-bottom: 25px;
+		background-color: #fff;
+		box-shadow: 0px 10px 30px 0px #061D251A;
+		.inv-faq-serial {
+			top: 0;
+			left: 0;
+			z-index: 1;
+			color: #fff;
+			width: 52px;
+			height: 100%;
+			display: flex;
+			position: absolute;
+			background: #868686;
+			align-items: center;
+			justify-content: center;
+			&:before {
+				top: 0;
+				left: 0;
+				z-index: -1;
+				height: 0%;
+				width: 100%;
+				content: '';
+				position: absolute;
+				background: var(--grad-color);
+				transition: all 500ms ease;
+			}
+		}
+		&.faq_bg {
+			.inv-faq-serial {
+				&:before {
+					height: 100%;
+				}
+			}
+		}
+	}
+	.accordion-body {
+		color: #666666;
+		position: relative;
+		background-color: #fff;
+		padding: 10px 30px 30px 85px;
+		&:before {
+			top: 40%;
+			left: 30px;
+			height: 80%;
+			content: '';
+			width: 2px;
+			position: absolute;
+			transform: translateY(-50%);
+			background-color: var(--base-color);
+		}
+	}
+	.accordion-button:not(.collapsed) {
+		box-shadow: none;
+	}
+	.accordion-button::after {
+		right: 25px;
+		height: auto;
+		width: auto;
+		font-size: 20px;
+		content: '\f055';
+		font-weight: 300;
+		position: absolute;
+		background-image: none;
+		font-family: 'Font Awesome 5 Pro';
+	}
+	.accordion-button:not(.collapsed)::after {
+		content: '\f056';
+		color: var(--base-color);
+	}
+}

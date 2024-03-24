@@ -1,0 +1,115 @@
+/*-----------------------------------------------------------------------------------
+
+    Project Name: Invite - IT Services & Technology Template
+    Author: Themexriver -->> (https://themeforest.net/user/themexriver)
+    Support: themexriver@gmail.com
+    Description: Invite - IT Services & Technology Template
+    Developer: Mohammad Wasim Mia
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+	01. Theme default CSS
+    02. header
+    03. home
+    04. global
+    05. preloder
+    06. about
+    07. contact
+    08. faq
+    09. news
+    10. blog
+    11. shop
+    12. author
+    13. 404
+    14. footer
+
+    -----------------------------------------------------------------------------------*/
+// abstracts scss
+@import
+'abstracts/variables',
+'abstracts/mixins';
+
+// base scss
+@import 
+'base/fonts',
+'base/base',
+'base/spacing',
+'base/typography',
+'base/animation',
+'base/overlay';
+
+// layout scss
+@import 
+'layout/header',
+'layout/navigation';
+
+// components scss
+@import 
+'components/buttons',
+'components/global',
+'components/hero',
+'components/preloader',
+'components/backtotop',
+'components/cursor',
+'components/slider',
+'components/cta',
+'components/brand',
+'components/about',
+'components/feature',
+'components/contact',
+'components/service',
+'components/testimonial',
+'components/counter',
+'components/blog',
+'components/team',
+'components/case-study',
+'components/project',
+'components/pricing',
+'components/sidebar',
+'components/preloder',
+'components/search',
+'components/breadcrumb',
+'components/accordion',
+'components/portfolio',
+'components/career',
+'components/shop',
+'components/mobile-menu',
+'components/404',
+'components/sec-title',
+'components/coming-soon',
+'components/home-4/global',
+'components/home-4/header',
+'components/home-4/get-quote',
+'components/home-4/about',
+'components/home-4/price',
+'components/home-4/service',
+'components/home-4/success',
+'components/home-4/growth',
+'components/home-4/team',
+'components/home-4/testimonial-faq',
+'components/home-4/video',
+'components/home-4/sponsor',
+'components/home-4/blog',
+'components/home-4/footer',
+'components/home-5/global',
+'components/home-5/slider',
+'components/home-5/sponsor',
+'components/home-5/about',
+'components/home-5/service',
+'components/home-5/counter',
+'components/home-5/pricing',
+'components/home-5/testimonial',
+'components/home-5/portfolio',
+'components/home-5/cta-blog',
+'components/home-5/partner',
+'components/home-5/footer',
+'components/home-5/responsive';
+
+// layout scss
+@import
+'layout/footer';
+
